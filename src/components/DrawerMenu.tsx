@@ -1,52 +1,54 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { BusinessCenter, Camera, Person, Phone } from '@mui/icons-material';
-import MenuIcon from '@mui/icons-material/Menu';
+import React, { useState } from "react";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Button from "@mui/material/Button";
+import MenuIcon from "@mui/icons-material/Menu";
 
-export default function TemporaryDrawer() {
-  const [open, setOpen] = React.useState(false);
-
-  const toggleDrawer = (newOpen: boolean) => () => {
-    setOpen(newOpen);
+export default function DrawerMenu() {
+  const about = window.innerHeight;
+  // const features = window.innerHeight * 2;
+  const features = window.innerWidth < 600 ? window.innerHeight * 3 : window.innerHeight * 2;
+  const services = window.innerWidth < 600 ? window.innerHeight * 5.9 : window.innerHeight * 2.7;
+  const contact = document.body.scrollHeight;
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setAnchorEl(event.currentTarget);
   };
 
-
-  const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
-        {['About Me', 'Services', 'Gallery', 'Contact'].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index === 0 ? <Person/> : index === 1 ? <BusinessCenter/> : index === 2 ? <Camera/> : <Phone/>}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
+  const handleClose = (ref: any) => {
+    window.scrollTo({ top: ref, behavior: "smooth" });
+    setAnchorEl(null);
+  };
 
   return (
     <div>
-      <Button onClick={toggleDrawer(true)} size="large" sx={{
-        color: "#438e5d",
-      }}>
+      <Button
+        id="basic-button"
+        aria-controls={open ? "basic-menu" : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? "true" : undefined}
+        onClick={handleClick}
+        sx={{
+          color: "#438e5d",
+        }}
+      >
         <MenuIcon />
       </Button>
-      <Drawer open={open} onClose={toggleDrawer(false)} anchor='right'>
-        {DrawerList}
-      </Drawer>
+      <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        MenuListProps={{
+          "aria-labelledby": "basic-button",
+        }}
+      >
+        <MenuItem onClick={() => handleClose(about)}>About Me</MenuItem>
+        <MenuItem onClick={() => handleClose(features)}>Featured In</MenuItem>
+        <MenuItem onClick={() => handleClose(services)}>Services</MenuItem>
+        <MenuItem onClick={() => handleClose(contact)}>Contact</MenuItem>
+      </Menu>
     </div>
   );
 }
