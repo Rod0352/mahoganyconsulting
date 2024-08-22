@@ -77,7 +77,7 @@ const Contact = () => {
         }}
       >
         Please fill out the form below to get in touch to schedule a
-        consultation or to learn more about Dr.Halls services.
+        consultation or to learn more about Dr. Halls services.
       </Typography>
       <Box
         sx={{

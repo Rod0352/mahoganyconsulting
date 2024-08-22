@@ -75,13 +75,13 @@ const Intro = () => {
                 variant="h5"
                 style={{
                   textAlign: "center",
-                  textShadow: "rgb(0 0 0 / 18%) 1px 2px 1px",
+                  textShadow: "rgb(0 0 0 / 15%) 1px 2px 1px",
                   // color: orangy,
                   color: window.innerWidth < 600 ? smallScreenGreenText : green  ,
                   fontFamily: "Ysabeau SC, sans-serif",
                 }}
               >
-                Founder & CEO
+                Celebrity Therapist
               </Typography>
               <Typography
                 variant="h6"
@@ -89,9 +89,11 @@ const Intro = () => {
                   textAlign: "center",
                   color: window.innerWidth < 600 ? smallScreenGreenText : green,
                   fontFamily: "Ysabeau SC, sans-serif",
+                  textShadow: "rgb(0 0 0 / 15%) 1px 2px 1px",
+
                 }}
               >
-                Hall Counseling Services
+                Mental Health Advocate
               </Typography>
               <Box
                 sx={{
@@ -107,7 +109,7 @@ const Intro = () => {
                     margin: "0 auto",
                     backgroundColor: "transparent",
                     color: green,
-                    border: "2px solid #e6a113",
+                    border: "2px solid #525704bd",
                     fontWeight: "bold",
                     marginRight: window.innerWidth < 391 ? 0 : 10,
                   }}
@@ -124,8 +126,8 @@ const Intro = () => {
                   style={{
                     borderRadius: 0,
                     margin: "0 auto",
-                    backgroundColor: "transparent",
-                    color: window.innerWidth < 600 ? smallScreenGreenText : orangy,
+                    backgroundColor: green,
+                    color: "white",
                     // border: "2px solid #525704bd",
                     border: "2px solid",
                     borderColor:

@@ -42,7 +42,7 @@ const About = () => {
             width: 410,
             height: 410,
             // padding: 20,
-            backgroundColor: orangy,
+            backgroundColor: green,
           }}
         >
           <Box
