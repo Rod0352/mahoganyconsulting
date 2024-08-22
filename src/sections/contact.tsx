@@ -179,7 +179,7 @@ const Contact = () => {
           variant="contained"
           // color="primary"
           fullWidth
-          sx={{ mt: 2, backgroundColor: orangy, color: "white" }}
+          sx={{ mt: 2, backgroundColor: green, color: "white" }}
         >
           {loading ? (
             <CircularProgress

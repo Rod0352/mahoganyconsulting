@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { green, orangy } from "../components/colors";
-import { School } from "@mui/icons-material";
+import { ArrowOutward, School } from "@mui/icons-material";
 const moh_yellow = require("../imgs/MOH_yellow2.jpg");
 const adrticle = require("../imgs/article1.png");
 const Podcast = require("../imgs/Podcast1.png");
@@ -171,7 +171,7 @@ const About = () => {
           width: "100%",
           marginTop: 15,
           // height: 80,
-          // backgroundColor: orangy,
+          backgroundColor: green,
           borderTop: `2px solid ${green}`,
           borderBottom: `2px solid ${green}`,
           display: "flex",
@@ -184,7 +184,7 @@ const About = () => {
         <Typography
           variant="h3"
           style={{
-            color: green,
+            color: "white",
             margin: "auto",
             marginTop: 5,
             marginBottom: 5,
@@ -193,7 +193,7 @@ const About = () => {
             maxWidth: 290,
           }}
         >
-          as seen on
+          As Seen On
         </Typography>
       </Box>
       <Box
@@ -253,7 +253,7 @@ const About = () => {
                 )
               }
             >
-              View
+              View 
             </Button>
           </CardActions>
         </Card>
