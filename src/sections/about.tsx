@@ -216,7 +216,7 @@ const About = () => {
             maxWidth: 295,
             border: `2px solid ${green}`,
             marginTop: 3,
-            boxShadow:"10px 10px 20px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(0, 0, 0, 0.3)",
+            boxShadow: "3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(0, 0, 0, 0.3)",
             marginBottom: 3,
             // onHover: { backgroundColor: green)
             transition: "transform 0.2s",
@@ -257,6 +257,7 @@ const About = () => {
             </Button>
           </CardActions>
         </Card>
+        <Box>
 
         <Card
           sx={{
@@ -264,13 +265,13 @@ const About = () => {
             border: `2px solid ${green}`,
             marginTop: 3,
             marginBottom: 3,
-            boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(0, 0, 0, 0.3)",
+            boxShadow: "3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(0, 0, 0, 0.3)",
             transition: "transform 0.2s",
             ":hover": {
               transform: "scale(1.1)",
             },
           }}
-        >
+          >
           <CardMedia sx={{ height: 200 }} image={Podcast} title="" />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
@@ -282,7 +283,7 @@ const About = () => {
             sx={{
               backgroundColor: green,
             }}
-          >
+            >
             <Button
               size="small"
               style={{
@@ -294,18 +295,19 @@ const About = () => {
                   "_blank"
                 )
               }
-            >
+              >
               View
             </Button>
           </CardActions>
         </Card>
 
+        </Box>
         <Card
           sx={{
             maxWidth: 295,
             marginTop: 3,
             marginBottom: 3,
-            boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(0, 0, 0, 0.3)",
+            boxShadow: "3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(0, 0, 0, 0.3)",
             border: `2px solid ${green}`,
             transition: "transform 0.2s",
             ":hover": {
