@@ -28,6 +28,18 @@ const Services = () => {
       >
         offering a range of services to meet your needs
       </Typography>
+      <Typography
+        variant="body1"
+        style={{
+          textAlign: "center",
+          color: green,
+          fontFamily: "Ysabeau SC, sans-serif",
+          width: "94%",
+          margin: "auto",
+        }}
+      >
+        If you would like to learn more about the services offered by Dr. Hall, see the contact section at the bottom to schedule a consultation!
+      </Typography>
       <Box
         sx={{
           display: "flex",
@@ -50,7 +62,7 @@ const Services = () => {
           <Box
             sx={{
               maxWidth: 500,
-              backgroundColor: orangy,
+              backgroundColor: green,
               boxShadow: "2px 2px 2px 1px #00000036",
             }}
           >
@@ -71,7 +83,7 @@ const Services = () => {
           <Box
             sx={{
               maxWidth: 500,
-              backgroundColor: orangy,
+              backgroundColor: green,
               boxShadow: "2px 2px 2px 1px #00000036",
             }}
           >
@@ -92,7 +104,7 @@ const Services = () => {
           <Box
             sx={{
               maxWidth: 500,
-              backgroundColor: orangy,
+              backgroundColor: green,
               boxShadow: "2px 2px 2px 1px #00000036",
             }}
           >
@@ -113,7 +125,7 @@ const Services = () => {
           <Box
             sx={{
               maxWidth: 500,
-              backgroundColor: orangy,
+              backgroundColor: green,
               marginBottom: 5,
               boxShadow: "2px 2px 2px 1px #00000036",
             }}
