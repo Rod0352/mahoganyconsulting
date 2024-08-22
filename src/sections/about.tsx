@@ -275,7 +275,7 @@ const About = () => {
           <CardContent>
             <Typography variant="body2" color="text.secondary">
               Podcast Interview with Dr. Mahogany Hall that discusses the impact
-              of mental health while building a successful buesiness
+              of mental health while building a successful business
             </Typography>
           </CardContent>
           <CardActions
