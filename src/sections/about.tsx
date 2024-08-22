@@ -216,7 +216,7 @@ const About = () => {
             maxWidth: 295,
             border: `2px solid ${green}`,
             marginTop: 3,
-            boxShadow: "0px 82px 108px -20px #bdbdbd",
+            boxShadow:"10px 10px 20px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(0, 0, 0, 0.3)",
             marginBottom: 3,
             // onHover: { backgroundColor: green)
             transition: "transform 0.2s",
@@ -264,7 +264,7 @@ const About = () => {
             border: `2px solid ${green}`,
             marginTop: 3,
             marginBottom: 3,
-            boxShadow: "0px 82px 108px -20px #bdbdbd",
+            boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(0, 0, 0, 0.3)",
             transition: "transform 0.2s",
             ":hover": {
               transform: "scale(1.1)",
@@ -305,7 +305,7 @@ const About = () => {
             maxWidth: 295,
             marginTop: 3,
             marginBottom: 3,
-            boxShadow: "0px 82px 108px -20px #bdbdbd",
+            boxShadow: "10px 10px 20px rgba(0, 0, 0, 0.5), -5px -5px 15px rgba(0, 0, 0, 0.3)",
             border: `2px solid ${green}`,
             transition: "transform 0.2s",
             ":hover": {
